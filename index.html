@@ -1,20 +1,24 @@
 
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js">
+    <script src= "https://cdn.jsdelivr.net/gh/Gamemaster13000/PlutoHacksMindAR></script
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: https://github.com/Gamemaster13000/MindAR/blob/33ebb492a9acf3339f97d371d7a0ccd1dec94f54/PlutoHacksFrontText.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/Gamemaster13000/PlutoHacksMindAR/PlutoHacksFrontText.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-	<a-asset-item id="avatarModel2" src="pluto.gltf"></a-asset-item>
-        <a-asset-item id="avatarModel" src="3dBuilderRocket.glb"></a-asset-item>
+	<a-asset-item id="avatarModel" src="3dBuilderRocket.glb"></a-asset-item>
+	<a-asset-item id="avatarModel2" src="https://cdn.jsdelivr.net/gh/Gamemaster13000/PlutoHacksMindAR/pluto.gltf"></a-asset-item>
+        
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
-	<a-gltf-model rotation="0 0 0 " position=".3 0 0.1" scale="0.10 0.10 0.10" src="#avatarModel"
+	<a-gltf-model rotation="0 0 0 " position=".3 0 0.1" scale="0.5 0.5 0.5" src="#avatarModel"
 		animation="property: rotation; to: 0 -360 0; easing: easeInOutQuad; loop: true; repeat: indefinite;  dur: 10000"> </a-gltf-model>
 			
 	<a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.5 0.5 0.5" src="#avatarModel2" animation="property:position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate" animation__2=" property: rotation; to: 0 360 0; easing: easeInOutQuad; loop: true; dur: 15000"  ></a-gltf-model>
